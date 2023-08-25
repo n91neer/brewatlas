@@ -1,8 +1,28 @@
-# brewatlas
-🍻Brewatlas
-
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8"/>
+    <title>PortfolIO</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+</head>
+<body>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+        <div class="navigation-items">
+            <a href="/" aria-current="page" class="logo-link w-nav-brand w--current">
+                <div class="text-block">
+                    🍻 
+                    <span class="text-span">Brewatlas</span>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="div_sticky_map">
+            <div class="div_mapbox">
+                <div class="html_mapbox w-embed w-script">
+                    <html>
+                    <html>
 <head>
 <meta charset="utf-8">
 <title>Display a map on a webpage</title>
@@ -11,7 +31,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { position: absolute; top: 150px; bottom: 0; width: 100vw; }
+#map { position: absolute; top: 50px; bottom: 0; width: 100vw; }
 </style>
 </head>
 <body>
@@ -61,5 +81,13 @@ showUserHeading: true
   
 </script>
 
+</body>
+</html>
+                    </html>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 </body>
 </html>
