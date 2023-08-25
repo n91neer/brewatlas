@@ -21,9 +21,9 @@ body { margin: 0; padding: 0; }
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        style: 'mapbox://styles/epihike/cllqwamds008b01qyesd2cdzv', // style URL
+        center: [12.0, 49.97], // starting position [lng, lat]
+        zoom: 4 // starting zoom
     });
 </script>
 
