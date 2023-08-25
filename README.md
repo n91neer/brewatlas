@@ -11,7 +11,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { position: absolute; top: 50px; bottom: 0; width: 100%; }
+#map { position: absolute; top: 150px; bottom: 0; width: 100%; }
 </style>
 </head>
 <body>
