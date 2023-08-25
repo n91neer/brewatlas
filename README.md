@@ -11,7 +11,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { position: absolute; top: 150px; bottom: 0; width: 100%; }
+#map { position: absolute; top: 150px; bottom: 0; width: 100vw; }
 </style>
 </head>
 <body>
@@ -46,6 +46,19 @@ mapboxgl: mapboxgl
   // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
+// Add geolocate control to the map.
+map.addControl(
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+// When active the map will receive updates to the device's location as it changes.
+trackUserLocation: true,
+// Draw an arrow next to the location dot to indicate which direction the device is heading.
+showUserHeading: true
+})
+);  
+  
 </script>
 
 </body>
