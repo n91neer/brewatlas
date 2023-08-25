@@ -15,6 +15,11 @@ body { margin: 0; padding: 0; }
 </style>
 </head>
 <body>
+
+<!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">  
+  
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZXBpaGlrZSIsImEiOiJja2RjemszdmMwN2Q2MnFucjFiY3diYTExIn0.yMxerasstTOUqTLlqJcxow';
@@ -26,12 +31,21 @@ body { margin: 0; padding: 0; }
         zoom: 4 // starting zoom
     });
   
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
   
 // Add a scale control to the map
 map.addControl(new mapboxgl.ScaleControl());  
-  
+
+// Add the control to the map.
+map.addControl(
+new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+mapboxgl: mapboxgl
+})
+);  
+
+  // Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
 </script>
 
 </body>
