@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
@@ -16,7 +15,6 @@
             </a>
             </div>
         </div>
-    </div>
     <div class="section">
         <div class="div_sticky_map">
             <div class="div_mapbox">
