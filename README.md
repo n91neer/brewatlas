@@ -25,6 +25,13 @@ body { margin: 0; padding: 0; }
         center: [12.0, 49.97], // starting position [lng, lat]
         zoom: 4 // starting zoom
     });
+  
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+  
+// Add a scale control to the map
+map.addControl(new mapboxgl.ScaleControl());  
+  
 </script>
 
 </body>
