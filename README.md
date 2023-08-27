@@ -1,26 +1,5 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <title>PortfolIO</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-</head>
-<body>
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
-        <div class="navigation-items">
-            <a href="/" aria-current="page" class="logo-link w-nav-brand w--current">
-                <div class="text-block">
-                    🍻 
-                    <span class="text-span">Brewatlas</span>
-                </div>
-            </a>
-            </div>
-        </div>
-    <div class="section">
-        <div class="div_sticky_map">
-            <div class="div_mapbox">
-                <div class="html_mapbox w-embed w-script">
-                    <html>
-                    <html>
 <head>
 <meta charset="utf-8">
 <title>Display a map on a webpage</title>
@@ -29,63 +8,21 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { position: absolute; top: 50px; bottom: 0; width: 100vw; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 </head>
 <body>
-
-<!-- Load the `mapbox-gl-geocoder` plugin. -->
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">  
-  
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZXBpaGlrZSIsImEiOiJja2RjemszdmMwN2Q2MnFucjFiY3diYTExIn0.yMxerasstTOUqTLlqJcxow';
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/epihike/cllqwamds008b01qyesd2cdzv', // style URL
-        center: [12.0, 49.97], // starting position [lng, lat]
-        zoom: 4 // starting zoom
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
     });
-  
-  
-// Add a scale control to the map
-map.addControl(new mapboxgl.ScaleControl());  
-
-// Add the control to the map.
-map.addControl(
-new MapboxGeocoder({
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
-})
-);  
-
-  // Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-
-// Add geolocate control to the map.
-map.addControl(
-new mapboxgl.GeolocateControl({
-positionOptions: {
-enableHighAccuracy: true
-},
-// When active the map will receive updates to the device's location as it changes.
-trackUserLocation: true,
-// Draw an arrow next to the location dot to indicate which direction the device is heading.
-showUserHeading: true
-})
-);  
-  
 </script>
 
-</body>
-</html>
-                    </html>
-                </div>
-            </div>
-        </div>
-    </div>
- 
 </body>
 </html>
